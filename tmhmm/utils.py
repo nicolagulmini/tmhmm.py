@@ -50,6 +50,7 @@ def load_fasta_file(fileobj):
                 header = line[1:].strip()
             else:
                 append_entry(header, sequence_parts, entries)
+                header = line[1:].strip()
         else:
             sequence_parts.append(line.strip())
     if header is not None:
