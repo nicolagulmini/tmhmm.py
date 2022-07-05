@@ -6,6 +6,8 @@ import os.path
 from tmhmm.model import parse
 from tmhmm.hmm import viterbi, forward, backward
 
+np.seterr(divide = 'ignore')
+
 
 GROUP_NAMES = ('i', 'm', 'o')
 
